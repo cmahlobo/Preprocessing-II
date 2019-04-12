@@ -1,1 +1,9 @@
 // Mixins in here
+.button(@radius:6px; @color:teal; @text: white){
+    border-radius: @radius;
+    background-color: @color;
+    color: @text;
+}
+button{
+    .button(@radius; @color; @text);
+}
